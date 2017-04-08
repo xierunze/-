@@ -1,0 +1,20 @@
+@import "./core/reset.scss";
+html,
+body {
+    width: 100%;
+    height: 100%;
+    #app {
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        @include flexbox();
+        @include flex-direction(column);
+        @import "./wholeScss/header.scss";
+        @import "./wholeScss/country.scss";
+        @import "./wholeScss/loginRegister.scss";
+        @import "./wholeScss/register.scss";
+        @import "./wholeScss/bourn.scss";
+        @import "./wholeScss/content.scss";
+        @import "./wholeScss/footer.scss";
+    }
+}

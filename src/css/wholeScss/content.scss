@@ -1,0 +1,208 @@
+#contents {
+    width: 100%;
+    .titleOne {
+        width: 100%;
+        height: .5rem;
+        background: #fff;
+        @include flexbox();
+        @include justify-content(space-between);
+        @include align-items(center);
+        h2 {
+            color: #666;
+            font-size: .17rem;
+            font-weight: normal;
+            margin-left: 36%;
+        }
+        a {
+            font-size: .12rem;
+            padding: 0 .15rem;
+            display: block;
+            background: url(/src/assets/images/more.png) no-repeat right center;
+            background-size: 25%;
+        }
+    }
+    .tables {
+        background: #fff;
+        width: 100%;
+        @include flexbox();
+        @include flex-wrap(wrap);
+        @include justify-content(space-between);
+        div {
+            width: 50%;
+            height: .65rem;
+            border: solid #ccc 1px;
+            border-width: 1px 0 0 1px;
+            a {
+                h3 {
+                    padding: .05rem 0 .01rem .1rem;
+                    font-size: .14rem;
+                    font-weight: normal;
+                }
+                p {
+                    font-size: .11rem;
+                    color: #ced1d5;
+                    padding-left: .1rem;
+                }
+            }
+        }
+        .tableOne {
+            border-left: none;
+            background: url(/src/assets/images/zc-bg01.png) no-repeat bottom right;
+            background-size: .75rem .55rem;
+            a {
+                h3 {
+                    color: #5dcce7;
+                }
+            }
+        }
+        .tableTwo {
+            background: url(/src/assets/images/zc-bg02.png) no-repeat bottom right;
+            background-size: .5rem .55rem;
+            a {
+                h3 {
+                    color: #fb9388;
+                }
+            }
+        }
+        .tableThree {
+            border-left: none;
+            border-bottom-width: 1px;
+            background: url(/src/assets/images/zc-bg03.png) no-repeat bottom right;
+            background-size: .5rem .6rem;
+            a {
+                h3 {
+                    color: #ffbd56;
+                }
+            }
+        }
+        .tableFour {
+            border-bottom-width: 1px;
+            background: url(/src/assets/images/zc-bg04.png) no-repeat bottom right;
+            background-size: .6rem .5rem;
+            a {
+                h3 {
+                    color: #25d9b2;
+                }
+            }
+        }
+    }
+    .indexList {
+        background: #fff;
+        width: 100%;
+        @include flexbox();
+        @include justify-content(space-between);
+        @include flex-wrap(wrap);
+        li {
+            width: 33.33%;
+            border: 1px solid #ccc;
+            border-width: 0 0 1px 1px;
+            a {
+                display: block;
+                padding: .11rem 0.06rem .11rem .06rem;
+                font-size: .12rem;
+                color: #646464;
+                img {
+                    width: .17rem;
+                    height: .17rem;
+                    margin-right: .05rem;
+                }
+            }
+        }
+    }
+    .sections {
+        background: #fff;
+        margin-top: .15rem;
+        width: 100%;
+        h2 {
+            width: 100%;
+            height: .45rem;
+            text-align: center;
+            line-height: .45rem;
+        }
+        .contentList {
+            width: 100%;
+            padding-right: .15rem;
+            @include flexbox();
+            @include justify-content(space-between);
+            @include flex-wrap(wrap);
+            li {
+                width: 50%;
+                padding: 0 0 .15rem .2rem;
+                img {
+                    width: 100%;
+                }
+                h3 {
+                    font-size: .12rem;
+                    color: #000;
+                    font-weight: normal;
+                    height: .38rem;
+                    overflow: hidden;
+                }
+                p {
+                    font-size: .11rem;
+                    color: #999;
+                    em {
+                        color: red;
+                        font-size: .12rem;
+                    }
+                }
+            }
+        }
+    }
+    .takeAbout {
+        width: 100%;
+        background: #fff;
+        margin-top: .2rem;
+        h2 {
+            width: 100%;
+            height: .45rem;
+            text-align: center;
+            line-height: .45rem;
+            font-size: .2rem;
+            font-weight: normal;
+        }
+        .takeList {
+            width: 100%;
+            padding: .1rem .1rem 0 .1rem;
+            @include flexbox();
+            @include flex-wrap(wrap);
+            li {
+                width: 100%;
+                margin-bottom: .2rem;
+                @include flexbox();
+                @include justify-content();
+                img {
+                    width: 40%;
+                    height: 100%;
+                }
+                a {
+                    display: block;
+                    margin-left: .1rem;
+                    p {
+                        font-size: .13rem;
+                        color: #666;
+                    }
+                    span {
+                        display: block;
+                        margin-top: .1rem;
+                        padding-left: .15rem;
+                        color: #666;
+                        font-size: .12rem;
+                        img {
+                            width: 15%;
+                        }
+                    }
+                }
+            }
+        }
+        .btnMone {
+            width: 90%;
+            text-align: center;
+            line-height: .4rem;
+            margin-left: .16rem;
+            background: none;
+            border: 1px solid #ccc;
+            margin-bottom: .16rem;
+        }
+    }
+}

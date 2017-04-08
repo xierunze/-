@@ -1,0 +1,21 @@
+ .listBox {
+     width: 100%;
+     border-top: 5px solid #2bab79;
+     background: #2d3741;
+     .listCode {
+         width: 100%;
+         @include flexbox();
+         @include justify-content(space-around);
+         a {
+             color: #9ea3ab;
+             display: block;
+             margin-top: .1rem;
+         }
+     }
+     p {
+         font-size: .1rem;
+         padding: .15rem .1rem;
+         text-align: center;
+         color: #656669;
+     }
+ }

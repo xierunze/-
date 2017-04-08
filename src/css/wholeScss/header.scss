@@ -1,0 +1,151 @@
+header {
+    position: relative;
+    .head {
+        width: 100%;
+        height: .45rem;
+        background: #40b084;
+        padding: 0 .1rem;
+        @include flexbox();
+        @include justify-content(space-between);
+        @include align-items(center);
+        .headLeft {
+            @include flexbox();
+            @include align-items(center);
+            .iconfont {
+                font-size: .3rem;
+                color: #fff;
+            }
+        }
+        .searchBox {
+            width: 100%;
+            @include flexbox();
+            @include justify-content(center);
+            @include align-items(center);
+            .inputBox {
+                width: 90%;
+                height: .25rem;
+                @include flexbox();
+                @include align-items(center);
+                border: solid #ccc 1px;
+                border-radius: .05rem;
+                background: #fff;
+                img {
+                    width: .2rem;
+                    height: .2rem;
+                }
+                input {
+                    width: 90%;
+                    font-size: .11rem;
+                    border: none;
+                }
+            }
+        }
+        .headRight {
+            @include flexbox();
+            @include align-items(center);
+            .iconfont {
+                font-size: .3rem;
+                color: #ffffff;
+            }
+        }
+    }
+    .eightRouter {
+        .routerBox {
+            width: 100%;
+            ul {
+                width: 100%;
+                @include flexbox();
+                @include justify-content(space-around);
+                @include align-items(center);
+                @include flex-wrap(wrap);
+                li {
+                    width: .7rem;
+                    height: .7rem;
+                    margin: .1rem 0;
+                    border-radius: .05rem;
+                    a {
+                        display: block;
+                        height: 100%;
+                        @include flexbox();
+                        @include justify-content(center);
+                        @include flex-wrap(wrap);
+                        @include align-items(flex-end);
+                        .iconfont {
+                            font-size: .3rem;
+                            color: #fff;
+                            display: block;
+                        }
+                        span {
+                            padding: .02rem;
+                            display: block;
+                            width: .7rem;
+                            background: rgba(0, 0, 0, 0.2);
+                            font-size: .12rem;
+                            color: #fff;
+                            text-align: center;
+                        }
+                    }
+                }
+                .item1 {
+                    background: #FFBD56;
+                }
+                .item2 {
+                    background: #25D9B2;
+                }
+                .item3 {
+                    background: #5DCCE7;
+                }
+                .item4 {
+                    background: #FB9388;
+                }
+                .item5 {
+                    background: #5DA1E7;
+                }
+                .item6 {
+                    background: #FFA071;
+                }
+                .item7 {
+                    background: #FCCA00;
+                }
+                .item8 {
+                    background: #CED1D5;
+                }
+            }
+        }
+    }
+    #content {
+        width: 70%;
+        background: rgba(255, 255, 255, 1);
+        z-index: 9;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        .back {
+            width: 100%;
+            height: .45rem;
+            line-height: .45rem;
+            color: #fff;
+            background: #2d3741;
+            text-align: right;
+            padding-right: .1rem;
+        }
+        .sidebar {
+            width: 100%;
+            background: #fff;
+            li {
+                width: 100%;
+                line-height: .4rem;
+                background-color: #364049;
+                text-align: left;
+                border-top: 1px solid #232d34;
+                a {
+                    color: #ced1d5;
+                    i {
+                        float: left;
+                        margin: 0 .2rem;
+                    }
+                }
+            }
+        }
+    }
+}

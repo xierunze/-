@@ -1,0 +1,171 @@
+.loginBox {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-30deg, #16b769, #03b087);
+    .loginTop {
+        width: 100%;
+        height: .45rem;
+        background: rgba(0, 0, 0, .1);
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(space-between);
+        span {
+            a {
+                font-size: .1rem;
+                padding: .03rem .05rem;
+                margin-left: .1rem;
+                color: #fff;
+            }
+        }
+        .loginOne {
+            a {
+                color: #fff;
+                font-size: .13rem;
+                padding: .14rem .1rem;
+            }
+        }
+        .registerOne {
+            margin-right: .05rem;
+            a {
+                color: #fff;
+                font-size: .13rem;
+                padding: .14rem .1rem;
+            }
+        }
+        .router-link-active {
+            border-bottom: #16b769 solid 3px;
+        }
+    }
+    .boxMany {
+        width: 100%;
+        height: 100%;
+        padding-top: .3rem;
+        .nameBox {
+            width: 100%;
+            @include flexbox();
+            @include justify-content(space-around);
+            a {
+                display: block;
+                width: 50%;
+                color: #fff;
+                text-align: center;
+                padding-bottom: .1rem;
+                border-bottom: #fff solid 1px;
+                font-weight: normal;
+                font-size: .15rem;
+            }
+            .router-link-active {
+                font-weight: bold;
+                border-bottom: #fff solid 2px;
+            }
+        }
+        .loginCon {
+            width: 100%;
+            padding: .3rem .2rem;
+            .grandsonBox {
+                width: 100%;
+                .granInp1 {
+                    padding: .08rem .12rem;
+                    background: hsla(0, 0%, 100%, .2);
+                    border-radius: .04rem;
+                    @include flexbox();
+                    @include justify-content(space-between);
+                    .iconfont {
+                        color: #fff;
+                    }
+                    input {
+                        font-size: .1rem;
+                        width: 90%;
+                        background: none;
+                        border: none;
+                        &::-webkit-input-placeholder {
+                            /* WebKit browsers*/
+                            color: #fff;
+                        }
+                        & ::-moz-placeholder {
+                            /* Mozilla Firefox 19+ */
+                            color: #fff;
+                        }
+                        & :-ms-input-placeholder {
+                            /* Internet Explorer 10+ */
+                            color: #fff;
+                        }
+                    }
+                }
+                .granInp2 {
+                    margin-top: .2rem;
+                    padding: .08rem .12rem;
+                    background: hsla(0, 0%, 100%, .2);
+                    border-radius: .04rem;
+                    @include flexbox();
+                    @include justify-content(space-between);
+                    .iconfont {
+                        color: #fff;
+                    }
+                    input {
+                        font-size: .1rem;
+                        width: 90%;
+                        background: none;
+                        border: none;
+                        &::-webkit-input-placeholder {
+                            /* WebKit browsers*/
+                            color: #fff;
+                        }
+                        & ::-moz-placeholder {
+                            /* Mozilla Firefox 19+ */
+                            color: #fff;
+                        }
+                        & :-ms-input-placeholder {
+                            /* Internet Explorer 10+ */
+                            color: #fff;
+                        }
+                    }
+                }
+                .memory {
+                    width: 100%;
+                    padding: .1rem 0;
+                    a {
+                        display: block;
+                        text-align: right;
+                        font-size: .13rem;
+                        color: #fff;
+                    }
+                }
+                .subMit {
+                    width: 100%;
+                    button {
+                        width: 100%;
+                        text-align: center;
+                        line-height: .4rem;
+                        border: none;
+                        background: #fff;
+                        border-radius: .04rem;
+                        color: #0cbf79;
+                    }
+                }
+                .thirdParty {
+                    @include flexbox();
+                    @include justify-content(center);
+                    @include flex-wrap(wrap);
+                    width: 100%;
+                    padding-top: .4rem;
+                    p {
+                        width: 100%;
+                        text-align: center;
+                        font-size: .15rem;
+                        color: #fff;
+                    }
+                    .iconBox {
+                        @include flexbox();
+                        @include justify-content(space-between);
+                        width: 40%;
+                        .iconfont {
+                            font-size: .4rem;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

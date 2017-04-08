@@ -1,0 +1,48 @@
+.countryBox {
+    width: 100%;
+    .countryListTop {
+        width: 100%;
+        height: .45rem;
+        background: #16b769;
+        @include flexbox();
+        @include justify-content(space-between);
+        @include align-items(center);
+        a {
+            font-size: .15rem;
+            color: #fff;
+            margin-left: .15rem;
+        }
+        h3 {
+            width: 60%;
+            font-size: .16rem;
+            color: #fff;
+        }
+    }
+    .countryList {
+        width: 100%;
+        padding: .1rem;
+        background: #FFF;
+        ul {
+            li {
+                width: 100%;
+                @include flexbox();
+                @include justify-content(space-between);
+                margin-top: .1rem;
+                .countryImg {
+                    width: 30%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .countryText {
+                    width: 70%;
+                    margin-left: .1rem;
+                    p {
+                        font-size: .12rem;
+                        color: #444;
+                    }
+                }
+            }
+        }
+    }
+}
